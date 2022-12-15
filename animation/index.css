@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-box {
+  width: 150px;
+  height: 150px;
+  padding: 55px;
+  margin: 80px;
+  background-color: darkblue;
+  color: khaki;
+  position: relative;
+  animation-name: box-anima;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes box-anima {
+  0% {
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    transform: rotate(50deg);
+  }
+
+  25% {
+    left: 800px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+    color: red;
+    transform: rotate(60deg);
+    font-size: 25px;
+    padding: 25px;
+  }
+
+  50% {
+    width: 150px;
+    height: 150px;
+    background-color: rebeccapurple;
+    color: aqua;
+    border-radius: 55px;
+    font-size: 30px;
+    transform: rotate(70deg);
+    left: 800px;
+    top: 300px;
+  }
+
+  75% {
+    top: 280px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    background-color: lightblue;
+    color: black;
+    transform: rotate(80deg);
+    font-size: 32px;
+    padding: 30px;
+  }
+
+
+
+  100% {
+    width: 150px;
+    height: 150px;
+    border: 55px;
+    background-color: palevioletred;
+    color: black;
+    left: 0px;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+}
